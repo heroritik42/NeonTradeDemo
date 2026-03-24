@@ -1,0 +1,99 @@
+body {
+  background:#020617;
+  color:#00ffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px 20px 20px;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+}
+
+#chart {
+  width: 70%;
+  height: 400px;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+}
+
+.panel {
+  width: 30%;
+  padding: 10px;
+  border-left: 1px solid cyan;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  background: #020617;
+  border: 1px solid cyan;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttons button {
+  width: 48%;
+  padding: 10px;
+  margin: 2px 1% 10px 1%;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #00ffff22;
+}
+
+#positions, #history {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid cyan;
+  border-radius: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.position-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid cyan;
+  padding: 4px 0;
+}
+
+.position-info {
+  flex-grow: 1;
+}
+
+.position-btn {
+  margin-left: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid cyan;
+  color: cyan;
+  padding: 3px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.stats {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #008080aa;
+}

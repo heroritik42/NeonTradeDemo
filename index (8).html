@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Neon Pro Practice Terminal</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+
+<h1>⚡ Neon Practice Terminal</h1>
+
+<div class="main">
+
+  <div id="chart"></div>
+
+  <div class="panel">
+
+    <input id="amount" type="number" min="1" step="any" placeholder="USDT Amount" value="10">
+    <input id="leverage" type="number" min="1" max="125" step="1" placeholder="Leverage" value="10">
+    <input id="sl" type="number" step="any" placeholder="Stop Loss % (e.g. 2)" value="1">
+    <input id="tp" type="number" step="any" placeholder="Take Profit % (e.g. 3)" value="2">
+
+    <div class="buttons">
+      <button onclick="openTrade('long')">🟢 Buy Long</button>
+      <button onclick="openTrade('short')">🔴 Sell Short</button>
+      <button onclick="addBalance()">➕ Add Balance</button>
+      <button onclick="cancelAllTrades()">❌ Cancel All</button>
+    </div>
+
+    <div id="indicators"></div>
+
+  </div>
+
+</div>
+
+<div id="positions"></div>
+<div id="history"></div>
+
+<div class="stats">
+  Balance: $<span id="balance">100</span> |
+  Win Rate: <span id="winrate">0</span>%
+</div>
+
+<div class="credit">
+  Developed by Neon Code | IG: @hero.ritik42
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
